@@ -15,6 +15,7 @@
 		58A7EA192C250A6300EF6174 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA182C250A6300EF6174 /* NewsViewModel.swift */; };
 		58A7EA1B2C250F7400EF6174 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA1A2C250F7400EF6174 /* NewsService.swift */; };
 		58A7EA1D2C25109A00EF6174 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA1C2C25109A00EF6174 /* Extension.swift */; };
+		58A7EA1F2C253AFA00EF6174 /* DetailArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA1E2C253AFA00EF6174 /* DetailArticleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		58A7EA182C250A6300EF6174 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		58A7EA1A2C250F7400EF6174 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		58A7EA1C2C25109A00EF6174 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		58A7EA1E2C253AFA00EF6174 /* DetailArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				58A7EA162C250A4500EF6174 /* News.swift */,
 				58A7EA1A2C250F7400EF6174 /* NewsService.swift */,
 				58A7EA182C250A6300EF6174 /* NewsViewModel.swift */,
+				58A7EA1E2C253AFA00EF6174 /* DetailArticleView.swift */,
 				58A7EA1C2C25109A00EF6174 /* Extension.swift */,
 				58A7EA062C24FE6300EF6174 /* Assets.xcassets */,
 				58A7EA082C24FE6300EF6174 /* Preview Content */,
@@ -158,6 +161,7 @@
 				58A7EA192C250A6300EF6174 /* NewsViewModel.swift in Sources */,
 				58A7EA1D2C25109A00EF6174 /* Extension.swift in Sources */,
 				58A7EA052C24FE6200EF6174 /* ContentView.swift in Sources */,
+				58A7EA1F2C253AFA00EF6174 /* DetailArticleView.swift in Sources */,
 				58A7EA032C24FE6200EF6174 /* SearchArticleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

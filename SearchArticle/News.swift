@@ -38,33 +38,19 @@ enum NewsApiError: LocalizedError {
     }
 }
 
+struct NewsItem: Codable, Identifiable {
+    let id = UUID()
+    let title: String
+    let link: String
+    let originallink: String
+    let description: String
+    let pubDate: String
 
-struct News: Codable {
-    var lastBuildDate: String
-    var total: Int
-    var start: Int
-    var display: Int
-    var newsItem: [NewsItem]
-    var newsResponse: NewsResponse
-}
-
-struct NewsItem: Codable {
-    var title: String
-    var originallink: String
-    var link: String
-    var description: String
-    var pubDate: Date
-
-    // JSON 키를 구조체 속성에 매핑하기 위한 CodingKeys 열거형
-//    enum CodingKeys: String, CodingKey {
-//        case title
-//        case originallink
-//        case link
-//        case description
-//        case pubDate
-//    }
+    enum CodingKeys: String, CodingKey {
+        case title, link, originallink, description, pubDate
+    }
 }
 
 struct NewsResponse: Codable {
-    
+    let items: [NewsItem]
 }

@@ -24,7 +24,7 @@ class NewsViewModel: ObservableObject {
                 self.newsService.searchNews(keyword: keyword)
                     .catch { _ in
                         Just([])
-                    } // 에러를 처리하여 빈 배열을 반환
+                    }
             }
             .receive(on: DispatchQueue.main)
             .share()
@@ -33,7 +33,6 @@ class NewsViewModel: ObservableObject {
     
     init() {
         searchNewsPublisher
-            .print("\(self.newsItems)")
             .assign(to: &$newsItems)
     }
 }

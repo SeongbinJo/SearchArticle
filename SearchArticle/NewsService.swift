@@ -35,15 +35,21 @@ class NewsService {
         
         return dataTaskPublisher
             .map(\.data)
-            .tryMap { data -> News in
+            .tryMap { data -> NewsResponse in
                 let decoder = JSONDecoder()
+                
+                if let jsonString = String(data: data, encoding: .utf8) {
+                                    print("서버 답 : \(jsonString)")
+                                }
+                
                 do {
-                    return try decoder.decode(News.self, from: data)
+                    return try decoder.decode(NewsResponse.self, from: data)
                 } catch {
+                    print("Decoding Error : \(error)")
                     throw NewsApiError.decodingError(error)
                 }
             }
-            .map(\.newsItem)
+            .map(\.items)
             .eraseToAnyPublisher()
     }
     
