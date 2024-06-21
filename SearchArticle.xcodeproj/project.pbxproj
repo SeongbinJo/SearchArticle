@@ -11,6 +11,10 @@
 		58A7EA052C24FE6200EF6174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA042C24FE6200EF6174 /* ContentView.swift */; };
 		58A7EA072C24FE6300EF6174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A7EA062C24FE6300EF6174 /* Assets.xcassets */; };
 		58A7EA0A2C24FE6300EF6174 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A7EA092C24FE6300EF6174 /* Preview Assets.xcassets */; };
+		58A7EA172C250A4500EF6174 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA162C250A4500EF6174 /* News.swift */; };
+		58A7EA192C250A6300EF6174 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA182C250A6300EF6174 /* NewsViewModel.swift */; };
+		58A7EA1B2C250F7400EF6174 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA1A2C250F7400EF6174 /* NewsService.swift */; };
+		58A7EA1D2C25109A00EF6174 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A7EA1C2C25109A00EF6174 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		58A7EA092C24FE6300EF6174 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		58A7EA102C25030E00EF6174 /* API_Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = API_Secret.xcconfig; sourceTree = "<group>"; };
 		58A7EA112C2503AE00EF6174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		58A7EA162C250A4500EF6174 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		58A7EA182C250A6300EF6174 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		58A7EA1A2C250F7400EF6174 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		58A7EA1C2C25109A00EF6174 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				58A7EA112C2503AE00EF6174 /* Info.plist */,
 				58A7EA022C24FE6200EF6174 /* SearchArticleApp.swift */,
 				58A7EA042C24FE6200EF6174 /* ContentView.swift */,
+				58A7EA162C250A4500EF6174 /* News.swift */,
+				58A7EA1A2C250F7400EF6174 /* NewsService.swift */,
+				58A7EA182C250A6300EF6174 /* NewsViewModel.swift */,
+				58A7EA1C2C25109A00EF6174 /* Extension.swift */,
 				58A7EA062C24FE6300EF6174 /* Assets.xcassets */,
 				58A7EA082C24FE6300EF6174 /* Preview Content */,
 			);
@@ -141,6 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58A7EA1B2C250F7400EF6174 /* NewsService.swift in Sources */,
+				58A7EA172C250A4500EF6174 /* News.swift in Sources */,
+				58A7EA192C250A6300EF6174 /* NewsViewModel.swift in Sources */,
+				58A7EA1D2C25109A00EF6174 /* Extension.swift in Sources */,
 				58A7EA052C24FE6200EF6174 /* ContentView.swift in Sources */,
 				58A7EA032C24FE6200EF6174 /* SearchArticleApp.swift in Sources */,
 			);
