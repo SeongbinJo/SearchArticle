@@ -9,18 +9,24 @@ import Foundation
 import Combine
 
 class NewsService {
+    private let id: String
+    private let secret: String
     
-    func searchNews(keyword: String) -> AnyPublisher<[NewsItem], Error> {
+    init() {
         guard let id = Bundle.main.client_Id else {
             print("API ID 가져오기 실패")
-            return Fail(error: ApiAcountError.failedId).eraseToAnyPublisher()
+            fatalError("Client_ID, Secret Error")
         }
         
         guard let secret = Bundle.main.client_Secret else {
             print("API Secret 가져오기 실패")
-            return Fail(error: ApiAcountError.failedSecret).eraseToAnyPublisher()
+            fatalError("Client_ID, Secret Error")
         }
-        
+        self.id = id
+        self.secret = secret
+    }
+    
+    func searchNews(keyword: String) -> AnyPublisher<[NewsItem], Error> {
         var urlComponents = URLComponents(string: "https://openapi.naver.com/v1/search/news.json")!
         urlComponents.queryItems = [
             URLQueryItem(name: "query", value: keyword),
@@ -28,8 +34,8 @@ class NewsService {
         ]
         
         var request = URLRequest(url: urlComponents.url!)
-        request.addValue(id, forHTTPHeaderField: "X-Naver-Client-Id")
-        request.addValue(secret, forHTTPHeaderField: "X-Naver-Client-Secret")
+        request.addValue(self.id, forHTTPHeaderField: "X-Naver-Client-Id")
+        request.addValue(self.secret, forHTTPHeaderField: "X-Naver-Client-Secret")
         
         let dataTaskPublisher = URLSession.shared.dataTaskPublisher(for: request)
         

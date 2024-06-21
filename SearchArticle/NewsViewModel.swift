@@ -15,6 +15,7 @@ class NewsViewModel: ObservableObject {
     @Published var keyword: String = ""
     
     private var newsService = NewsService()
+    private var cancellables = Set<AnyCancellable>()
     
     private lazy var searchNewsPublisher: AnyPublisher<[NewsItem], Never> = {
         $keyword
@@ -33,6 +34,8 @@ class NewsViewModel: ObservableObject {
     
     init() {
         searchNewsPublisher
-            .assign(to: &$newsItems)
+            .assign(to: \.newsItems, on: self)
+            .store(in: &cancellables)
+
     }
 }
