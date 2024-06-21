@@ -19,6 +19,8 @@
 		58A7EA042C24FE6200EF6174 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		58A7EA062C24FE6300EF6174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A7EA092C24FE6300EF6174 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58A7EA102C25030E00EF6174 /* API_Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = API_Secret.xcconfig; sourceTree = "<group>"; };
+		58A7EA112C2503AE00EF6174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		58A7E9F62C24FE6200EF6174 = {
 			isa = PBXGroup;
 			children = (
+				58A7EA102C25030E00EF6174 /* API_Secret.xcconfig */,
 				58A7EA012C24FE6200EF6174 /* SearchArticle */,
 				58A7EA002C24FE6200EF6174 /* Products */,
 			);
@@ -51,6 +54,7 @@
 		58A7EA012C24FE6200EF6174 /* SearchArticle */ = {
 			isa = PBXGroup;
 			children = (
+				58A7EA112C2503AE00EF6174 /* Info.plist */,
 				58A7EA022C24FE6200EF6174 /* SearchArticleApp.swift */,
 				58A7EA042C24FE6200EF6174 /* ContentView.swift */,
 				58A7EA062C24FE6300EF6174 /* Assets.xcassets */,
@@ -266,6 +270,7 @@
 		};
 		58A7EA0E2C24FE6300EF6174 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A7EA102C25030E00EF6174 /* API_Secret.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,6 +279,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SearchArticle/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SearchArticle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,6 +300,7 @@
 		};
 		58A7EA0F2C24FE6300EF6174 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58A7EA102C25030E00EF6174 /* API_Secret.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SearchArticle/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SearchArticle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
